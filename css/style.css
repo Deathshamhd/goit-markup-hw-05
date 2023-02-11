@@ -363,10 +363,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
-  width: 316px;
-  height: 47px;
+  width: 370px;
+  height: 70px;
   color: #FFFFFF;
-  padding-top: 16px;
+  padding-top: 25px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
