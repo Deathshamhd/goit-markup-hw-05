@@ -344,6 +344,33 @@ ul {
   margin-left: 30px;
 }
 
+.what-item
+{
+  position: relative;
+}
+
+.what-span
+{
+
+
+  position: absolute;
+  bottom: 1px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  
+  justify-content: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  display: flex;
+  width: 316px;
+  height: 47px;
+  color: #FFFFFF;
+  padding-top: 16px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+
 /* TEAM-SECTION*/
 
 .team-list {
