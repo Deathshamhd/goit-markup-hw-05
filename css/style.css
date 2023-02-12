@@ -609,49 +609,6 @@ overflow: hidden;
 }
 
 
-.overlay:hover .overlay-info
-{
-  width: 370px;
-   height: 294px;
-
-  transform: translateY(-370px);
-
-  transition-duration: 250ms;
-
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-
-}
-
-.overlay-info
-{
-  box-sizing: border-box;
-
-  position: absolute;
-
-  background: rgba(33, 150, 243, 0.9);
-
-  
-}
-
-.overlay-info:hover
-{
-  visibility: visible;
-}
-
-.overlay-text
-{
-  font-weight: 400;
-font-size: 18px;
-line-height:calc(28/18);
-
-
-letter-spacing: 0.03em;
-
-color: #FFFFFF;
-
-}
-
 
 
 
@@ -675,11 +632,42 @@ color: #FFFFFF;
   border-right: 1px solid #eeeeee;
 
   border-bottom: 1px solid #eeeeee;
+
+}
+
+.card-info p
+
+{
+ 
+margin: 0;
+
+padding: 0;
+
+  visibility:hidden;
+}
+
+
+.card-info:hover p
+{
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+
+  transform:translateY(-150px);
+
+
+  visibility: visible;
+
+  background: rgba(33, 150, 243, 0.9);
+
+  background-size: cover;
+
+text-align: center;
+color: #FFFFFF;
 }
 
 .card-descripion:hover
 {
   cursor: pointer;
+
 }
 
 .project-job {
