@@ -103,6 +103,7 @@ ul {
   letter-spacing: 0.02em;
 
   color: var(--primary-text-color);
+  position: relative;
 }
 
 .nav-link:hover,
@@ -139,11 +140,14 @@ ul {
   display: flex;
 
   align-items: center;
+
+  position: relative;
 }
 
 .contact-link-icon {
   fill: currentColor;
   margin-right: 10px;
+  
 }
 
 /*Main*/
@@ -206,6 +210,8 @@ ul {
   line-height: calc(30 / 16);
 
   color: var(--light-background-color);
+
+
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -354,7 +360,7 @@ ul {
 
 
   position: absolute;
-  bottom: 1px;
+  bottom:0;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -363,10 +369,10 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   display: flex;
-  width: 370px;
-  height: 70px;
+  width:100%;
+  
   color: #FFFFFF;
-  padding-top: 25px;
+  padding: 25px 0;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
@@ -591,45 +597,62 @@ border-radius: 0px 0px 4px 4px;
 
 position: relative;
 
+overflow: hidden;
+
+
+
 }
-
-
-
 
 .overlay
 {
+  position: relative;
+}
+
+
+.overlay:hover .overlay-info
+{
+  width: 370px;
+   height: 294px;
+
+  transform: translateY(-370px);
+
+  transition-duration: 250ms;
+
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.overlay-info
+{
+  box-sizing: border-box;
+
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #3f51b5;
 
-  transform: translatex(100%);
+  background: rgba(33, 150, 243, 0.9);
 
-  
   
 }
 
-
-.overlay > p 
+.overlay-info:hover
 {
-  color: #fff;
-  padding-top: 10px;
-  margin: 0;
-  font-size: 18px;
-
-  text-align: center;
-  
+  visibility: visible;
 }
 
-.my-project-item:hover,
-.my-project-item:focus,
-.overlay
+.overlay-text
 {
-  transform: translatex(0);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  font-weight: 400;
+font-size: 18px;
+line-height:calc(28/18);
+
+
+letter-spacing: 0.03em;
+
+color: #FFFFFF;
+
 }
+
+
 
 
 .project-name {
@@ -652,6 +675,11 @@ position: relative;
   border-right: 1px solid #eeeeee;
 
   border-bottom: 1px solid #eeeeee;
+}
+
+.card-descripion:hover
+{
+  cursor: pointer;
 }
 
 .project-job {
