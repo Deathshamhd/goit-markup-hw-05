@@ -118,6 +118,9 @@ ul {
 
 .nav-link-current {
   color: var(--accent-color);
+
+  border-bottom: 4px solid var(--accent-color);
+  border-radius: 2px;
 }
 
 .contact-list {
