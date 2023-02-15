@@ -59,7 +59,17 @@
             EFFECTIVE SOLUTIONS FOR <br />
             YOUR BUSINESS
           </h1>
-          <button type="button" class="hero-button">Request our service</button>
+          
+          <button type="button" class="hero-button"  data-modal-open>Request our service</button>
+          <div class="backdrop  is-hidden " data-modal>
+            <div class="modal-window">
+              <button type="button" data-modal-close>close</button> 
+
+              </div>
+
+          </div>
+
+
         </div>
       </section>
 
@@ -427,5 +437,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
