@@ -212,9 +212,9 @@ ul {
 {
   position: absolute;
 
-  width: 400px;
+  width: 528px;
 
-  height: 400px;
+  height: 581px;
 
   
   background: #FFFFFF;
@@ -243,6 +243,14 @@ position: absolute;
 
   border-radius: 50%;
 
+}
+
+
+.closed-button:hover,
+.closed-button:focus
+{
+  color: var(--accent-color);
+  background-color: var(--primary-text-color);
 }
 
 .x-size
